@@ -1,0 +1,43 @@
+%------------------------------------------
+% Contiene la última página
+%-----------------------------------------
+% Ponemos el marcador en el PDF al nivel adecuado, dependiendo
+% de su hubo partes en el documento o no (si las hay, queremos
+% que aparezca "al mismo nivel" que las partes.
+\ifpdf
+\ifx\tienePartesTeXiS\undefined
+   \pdfbookmark[0]{Fin}{fin}
+\else
+   \pdfbookmark[-1]{Fin}{fin}
+\fi
+\fi
+\thispagestyle{empty}\mbox{}
+
+\vspace*{4cm}
+
+\small
+
+\hfill \emph{Su libertad México crea,}
+
+\hfill \emph{surge la Patria nace la luz;}
+
+\hfill \emph{nos convoca tu voz, Politécnico,}
+
+\hfill \emph{nos conduce tu amor, juventud.}
+
+\hfill 
+
+\hfill \emph{Coro del Himno del Instituto Politécnico Nacional} 
+\newpage
+\thispagestyle{empty}\mbox{}
+
+\newpage
+
+% Variable local para emacs, para  que encuentre el fichero maestro de
+% compilación y funcionen mejor algunas teclas rápidas de AucTeX
+
+%%%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../Tesis.tex"
+%%% End:

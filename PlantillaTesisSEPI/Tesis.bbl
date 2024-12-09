@@ -1,0 +1,82 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{RamPac20}{article}{}
+    \name{author}{7}{}{%
+      {{hash=RJN}{%
+         family={{Ramos-Silva}},
+         familyi={R\bibinitperiod},
+         given={J.\bibnamedelima N.},
+         giveni={J\bibinitperiod\bibinitdelim N\bibinitperiod},
+      }}%
+      {{hash=PA}{%
+         family={{Pacheco-Sanchez}},
+         familyi={P\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+      {{hash=DLM}{%
+         family={{Diaz-Albarran}},
+         familyi={D\bibinitperiod},
+         given={L.\bibnamedelima M.},
+         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=RLM}{%
+         family={{Rodriguez-Mendez}},
+         familyi={R\bibinitperiod},
+         given={L.\bibnamedelima M.},
+         giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+      {{hash=EMA}{%
+         family={{Enciso-Aguilar}},
+         familyi={E\bibinitperiod},
+         given={M.\bibnamedelima A.},
+         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=SM}{%
+         family={{Schroter}},
+         familyi={S\bibinitperiod},
+         given={M.},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=RE}{%
+         family={{Ramirez-Garcia}},
+         familyi={R\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \keyw{CNTFETs;Gain;Integrated circuit modeling;Radio frequency;Electron
+  tubes;Performance evaluation;Data models;CNTFET;RF amplifier;compact
+  model;linearity;LNA;gain amplifier}
+    \strng{namehash}{RJNPADLM+1}
+    \strng{fullhash}{RJNPADLMRLMEMASMRE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \verb{doi}
+    \verb 10.1109/TNANO.2020.2978816
+    \endverb
+    \field{issn}{1941-0085}
+    \field{pages}{1\bibrangedash 1}
+    \field{title}{High-frequency performance study of CNTFET-based amplifiers}
+    \field{journaltitle}{IEEE Transactions on Nanotechnology}
+    \field{year}{2020}
+  \endentry
+\enddatalist
+\endinput

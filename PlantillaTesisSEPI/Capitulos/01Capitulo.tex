@@ -1,0 +1,51 @@
+%---------------------------------------------------------------------
+%                          Capítulo 1
+%---------------------------------------------------------------------
+\chapter{Nombre del capítulo}
+%Etiqueta del capítulo	
+\label{}
+%Estructura para poner una frase célebre
+\begin{FraseCelebre}
+\begin{Frase}
+En la vida no existe nada que temer, \\
+solo cosas que comprender.
+\end{Frase}
+\begin{Fuente}
+Marie Curie
+\end{Fuente}
+\end{FraseCelebre}
+%-------------------------------------------------------------------
+%Aquí empieza el capítulo 
+\section{Introducción}
+Contenido...
+\subsection{Contenido...}
+Contenido...
+\subsubsection{Contenido..}
+Contenido...
+Ejemplo de cita \cite{RamPac20}.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.45\linewidth]{fig/Capitulo1/Pin_ThirdHarmonic_es}
+	\caption{Descripción de la figura.}
+	\label{fig:pinthirdharmonices}
+\end{figure}
+
+Se recomienda al usuario de ésta plantilla utilizar figuras en formato PDF y para generar gráficas utilizar el software GLE, un script de ejemplo para generar la Figura \ref{fig:parametrossccamvds3vgs1cntfet} se puede encontrar dentro de la carpeta fig/FuentesCapitulo1.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.45\linewidth]{fig/Capitulo1/Parametros_S_CCAM_VDS_3_VGS_1_CNTFET}
+	\caption{Descripción de la figura.}
+	\label{fig:parametrossccamvds3vgs1cntfet}
+\end{figure}
+
+
+%Líneas para añadir la bibliografía por cada capítulo, utilizar bibtex.
+\addcontentsline{toc}{chapter}{Referencias}
+\printbibliography[segment=\therefsegment]
+
+
+\endinput
+

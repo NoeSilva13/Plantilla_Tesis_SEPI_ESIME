@@ -1,0 +1,45 @@
+%--------------------------------------------------------
+% Contiene la definición de las macros para crear 		%las    	páginas de dedicatorias.
+%--------------------------------------------------------
+%%%
+% Gestión de la configuración
+%%%
+% Primera dedicatoria
+\newcommand{\dedicatoriaUno}[1]{
+\def\dedicatoriaUnoVal{#1}
+}
+%%%
+% Configuración terminada
+%%%
+%%%
+%% COMANDO PARA CREAR LAS DEDICATORIAS
+%% CONTIENE TODO EL CÓDIGO LaTeX
+%%%
+\newcommand{\putDedicatoria}[1]{
+% Si no hemos puesto aún el marcador en el PDF, lo ponemos
+\ifx\marcadorDedicatorias\undefined
+\ifpdf
+   \pdfbookmark{Dedicatoria}{dedicatoria}
+\fi
+\def\marcadorDedicatorias{1}
+\fi
+% Primera pagina con la dedicatoria
+\thispagestyle{empty}\mbox{}
+\vspace*{4cm}
+\begin{flushright}
+#1
+\end{flushright}
+\newpage
+% Segunda página, vacia
+\thispagestyle{empty}\mbox{}
+\newpage
+
+} %\newcommand{\putDedicatoria}[1]
+
+\newcommand{\makeDedicatorias}{
+% Dedicatoria 1
+\ifx\dedicatoriaUnoVal\undefined
+\else
+\putDedicatoria{\dedicatoriaUnoVal}
+\fi
+}

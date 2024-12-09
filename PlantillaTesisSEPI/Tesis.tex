@@ -1,0 +1,68 @@
+\documentclass[12pt,letterpaper,twoside]{book}
+%- - - - - - - - - - - - - - - - - - - - - -- - - - - - - - - - 
+%            Preámbulo del documento. Configuraciones varias
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+\usepackage[most]{tcolorbox}
+\usepackage{acronym}
+\usepackage{multirow} 
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{url}
+\usepackage{pbox}
+\usepackage{makecell}
+\usepackage{multirow}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{rotating}
+\usepackage{geometry}
+\geometry{bindingoffset=2cm}
+\geometry{textwidth=360pt}
+\usepackage{pdfpages}
+\usepackage{anysize}
+\usepackage{TeXiS/TeXiS}
+\hypersetup{%
+	pdftitle = {Título},
+   pdfsubject = {Tesis de Mestría SEPI Telecomunicaciones ESIME Zacatenco},
+   pdfkeywords = {},
+   pdfauthor = {\textcopyright\ Autor},
+   pdfcreator = {\LaTeX\ con el paquete \flqq hyperref\frqq},
+   pdfproducer = {pdfeTeX-0.\the\pdftexversion\pdftexrevision},
+   }
+    \pdfinfo{/CreationDate (\today)}
+\papersize{27.9cm}{21.5cm} 
+\marginsize{2.5cm}{2.5cm}{1.5cm}{2.5cm}
+\usepackage[export]{adjustbox}
+\usepackage{mathptmx}
+\usepackage{setspace}
+\usepackage{siunitx}
+\usepackage{csquotes}
+\usepackage[backend=bibtex,refsegment=chapter, style=ieee]{biblatex}
+\addbibresource{referencias.bib}
+\AtBeginBibliography{\footnotesize}
+\usepackage{caption}
+\captionsetup{font=small}
+\begin{document}
+\renewcommand{\bibname}{Referencias}
+\frontmatter
+\spacing{1.3}
+\include{Cascaras/Portada}
+La plantilla está basada en TeXiS: \url{http://gaia.fdi.ucm.es/research/texis/} por lo que se recomienda consultar su manual. TeXiS se distribuye bajo las licencias \LaTeX\ Project Public License (Licencia Pública del Proyecto \LaTeX), GPLv3 y Creative Commons (CC-BY-SA). \\ \\
+El documento ya está preparado para ser impreso a doble cara. 
+\include{Cascaras/dedicatoria}
+\include{Cascaras/agradecimientos}
+\include{Cascaras/resumen}
+\include{Cascaras/abstract}
+\include{Cascaras/estructura}
+\include{TeXiS/TeXiS_toc}
+\mainmatter
+\restauraCabecera
+\include{Capitulos/01Capitulo}
+% Apéndices
+\appendix
+\include{Apendices/01ApendiceA}
+\backmatter
+\include{Cascaras/fin}
+\end{document}
+

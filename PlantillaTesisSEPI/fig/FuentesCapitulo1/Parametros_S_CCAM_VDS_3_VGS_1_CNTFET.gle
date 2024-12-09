@@ -1,0 +1,67 @@
+size 9.5 9.5
+
+begin translate 0.99 0.7
+
+begin graph
+
+scale 0.705 0.79, noborder
+
+xtitle "\setfont{rmi}{f} \setfont{rm}{(GHz)}" dist 0.17
+ytitle "\setfont{rmi}{S}_{\setfont{rm}{ij}} (\setfont{rm}dB)" rotate dist 0.03
+xaxis min 0.5 max 30 dticks 5  font rm lwidth 0.05 
+yaxis min -15 max 6 dticks 5 lwidth 0.05
+
+ xticks length 0.3  lwidth 0.05
+ x2ticks length 0.3  lwidth 0.05
+ y2ticks length 0.3  lwidth 0.05
+ yticks length 0.3  lwidth 0.05
+ xsubticks lwidth 0.05 on
+ ysubticks lwidth 0.05 on
+ xlabels hei 0.9  dist 0.22 log off
+ ylabels hei 0.9
+
+data "C:\Users\sears\Desktop\PlantillaTesisSEPI\fig\FuentesCapitulo1\data\Parametros_S_CCAM_VDS_3_VGS_1_CNTFET.txt" ignore 1 
+
+
+let d1=x*1e-9, d1
+let d2=x*1e-9, d2
+let d3=x*1e-9, d3
+let d4=x*1e-9, d4
+
+
+key compact pos br hei .5 nobox
+set font rm
+
+ dn lwidth 0.05 msize 0.25
+
+ d1 color gray60 marker circle mdist 0.4 msize 0.35
+ d2 color gray40 marker triangle mdist 0.4 msize 0.35
+ d3 color black marker cross mdist 0.4 msize 0.35
+ d4 color gray30  marker diamond mdist 0.4 msize 0.35
+ 
+  d5 color gray60 smooth line lstyle 3 marker circle  
+ d6 color gray40 smooth line  lstyle 6 marker circle 
+ d7 color black smooth line marker circle 
+ d8 color gray30 smooth line  lstyle 5 marker circle 
+
+
+end graph
+
+begin key
+
+nobox
+compact
+position br
+!set lwidth 0.05
+offset 1 0.2
+hei 0.45
+text "\setfont{rmi}S_{\rm 11}" color gray60 marker circle msize 0.35
+text "\setfont{rmi}S_{\rm 12}" color gray40 marker triangle msize 0.35
+text "\setfont{rmi}S_{\rm 21}" color black marker cross msize 0.35
+text "\setfont{rmi}S_{\rm 22}" color gray30 marker diamond msize 0.35
+end key
+
+end translate
+
+
+
